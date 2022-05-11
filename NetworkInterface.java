@@ -42,6 +42,16 @@ public class NetworkInterface {
 
         Actuator actuator=new Actuator();
         HeatSensor heatSensor= new HeatSensor();
+
+        Member m1= new Member("Ali");
+        Member m2= new Member("Ahmet");
+        Member m3= new Member("Veli");
+        Member m4= new Member("Ayşe");
+        heatSensor.addMember(m1);
+        heatSensor.addMember(m2);
+        heatSensor.addMember(m3);
+        heatSensor.addMember(m4);
+
         currentStatu=status.Opening_Test;
         showMessage("Açılış Testi Yapılıyor...\n");
         currentStatu=status.Waiting;
